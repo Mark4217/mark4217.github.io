@@ -32,8 +32,18 @@
     </style>
     <title>Curb Your Memes</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+   function myFunction() {
+        document.getElementById("jsDemo").innerHTML = "Hello, " + document.getElementById("userTextInput").value;
+      }
+    function changeFont() {
+      document.getElementById("headingID").style.fontFamily = "Courier New"; 
+    }
+  </script>
   </head>
   <body>
+    <h1 id="headingID">BIG heading!</h1>
+    <button type="button" onclick='changeFont()'>Change the font of this heading!</button>
     <p id="uniqueParagraph">Hello World</p>
     <h1 class="myClass">This Is My Website</h1>
     <h2>MUAHAHAHAAHAHAAHHAHAHHHAH<h2>
